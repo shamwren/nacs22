@@ -1,0 +1,272 @@
+body {
+  background-color: black;
+  font-family: pirulen, sans-serif;
+  width: 100%;
+  overflow: hidden;
+}
+
+nav.navbar {
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 10vh;
+  z-index: 500;
+  display: flex;
+  padding: 10px;
+}
+
+.navLogo {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  height: 5vh;
+}
+
+.mec {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 20px;
+  height: 5vh;
+}
+
+#myVideo2 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 70%;
+  -o-object-fit: cover;
+  z-index: -1000;
+}
+h1 {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 1.5vw;
+  color: rgb(109, 109, 109);
+}
+
+.map {
+  height: 75vh;
+  width: 80vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.eastSouth {
+  opacity: 70%;
+  fill: aquamarine;
+}
+.westSouth {
+  opacity: 60%;
+}
+.southAtlantic {
+  opacity: 50%;
+}
+.westNorth {
+  opacity: 40%;
+}
+.eastNorth {
+  opacity: 30%;
+}
+.mountain {
+  opacity: 20%;
+}
+.pacific {
+  opacity: 10%;
+}
+.middleAtlantic {
+  opacity: 80%;
+}
+.newEngland {
+  opacity: 20%;
+}
+
+  .hawaii:hover {
+    fill: transparent;
+  }
+  .alaska:hover {
+    fill: transparent;
+  }
+  .california:hover {
+    fill: transparent;
+  }
+
+  .oregon:hover {
+    fill: transparent;
+  }
+  .washington:hover {
+    fill: transparent;
+  }
+  .wyoming:hover {
+    fill: transparent;
+  }
+
+  .montana:hover {
+    fill: transparent;
+  }
+
+  .idaho:hover {
+    fill: transparent;
+  }
+  .arizona:hover {
+    fill: transparent;
+  }
+  .nevada:hover {
+    fill: transparent;
+  }
+  .utah:hover {
+    fill: transparent;
+  }
+  .colorado:hover {
+    fill: transparent;
+  }
+  .newMexico:hover {
+    fill: transparent;
+  }
+  .northDakota:hover {
+    fill: transparent;
+  }
+  .southDakota:hover {
+    fill: transparent;
+  }
+  .texas:hover {
+    fill: transparent;
+  }
+  .nebraska:hover {
+    fill: transparent;
+  }
+  .iowa:hover {
+    fill: transparent;
+  }
+  .minnesota:hover {
+    fill: transparent;
+  }
+  .wisconsin:hover {
+    fill: transparent;
+  }
+  .missouri:hover {
+    fill: transparent;
+  }
+  .arkansas:hover {
+    fill: transparent;
+  }
+  .oklahoma:hover {
+    fill: transparent;
+  }
+  .kansas:hover {
+    fill: transparent;
+  }
+  .louisiana:hover {
+    fill: transparent;
+  }
+  .georgia:hover {
+    fill: transparent;
+  }
+  .alabama:hover {
+    fill: transparent;
+  }
+  .northCarolina:hover {
+    fill: transparent;
+  }
+  .tennessee:hover {
+    fill: transparent;
+  }
+  .michigan:hover {
+    fill: transparent;
+  }
+  .mississippi:hover {
+    fill: transparent;
+  }
+  .indiana:hover {
+    fill: transparent;
+  }
+  .illinois:hover {
+    fill: transparent;
+  }
+  .southCarolina:hover {
+    fill: transparent;
+  }
+  .newYork:hover {
+    fill: transparent;
+  }
+  .pennsylvania:hover {
+    fill: transparent;
+  }
+  .kentucky:hover {
+    fill: transparent;
+  }
+  .ohio:hover {
+    fill: transparent;
+  }
+  .virginia:hover {
+    fill: transparent;
+  }
+  .DC:hover {
+    fill: transparent;
+  }
+  .westVirginia:hover {
+    fill: transparent;
+  }
+  .newJersey:hover {
+    fill: transparent;
+  }
+  .maine:hover {
+    fill: transparent;
+  }
+  .vermont:hover {
+    fill: transparent;
+  }
+  .newHampshire:hover {
+    fill: transparent;
+  }
+  .massaschusetts:hover {
+    fill: transparent;
+  }
+  .conneticut:hover {
+    fill: transparent;
+  }
+  .delaware:hover {
+    fill: transparent;
+  }
+  .rhodeIsland:hover {
+    fill: transparent;
+  }
+  
+  .florida:hover {
+    fill: transparent;
+  }
+
+  .california:active {
+    animation-name: scale;
+    animation-duration: .5s;
+}
+ 
+@keyframes scale {
+    from {
+      scale: 100%;
+      animation-timing-function: ease;
+  
+    }
+    50% {
+      opacity: 40%;
+      fill: #8dc63f;
+
+    }
+    to {
+      scale: 100%;
+      animation-timing-function: ease;
+    }
+}
+
+div.divButtons {
+  height: 100%;
+  width: 100%;
+}

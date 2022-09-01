@@ -1,0 +1,148 @@
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 70%;
+    -o-object-fit: cover;
+    z-index: -1000;
+  }
+
+<!--WEST-->
+.buttonClick {
+  fill: blue;
+}
+
+.buttonClick:active {
+    animation-name: bounce;
+    animation-duration: .15s;
+}
+ 
+@keyframes bounce {
+  from {
+    scale: 100%;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    scale: 80%;
+    opacity: 50%;
+  }
+  to {
+    scale: 100%;
+    animation-timing-function: ease;
+  }
+}
+
+.buttonRow {
+  padding-top: 2vh;
+  position: fixed;
+  bottom:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  padding-bottom: 4.5vh;
+
+}
+.Button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 8vw;
+    height: 15vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonsText {
+  color: gray;
+  font-weight: 600;
+  transform: rotate(-10deg);
+  font-size: .75vw;
+  padding-top: 1vh;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    1.5deg,
+    #4e4e4e 0%,
+    #373737 29%,
+    #232323 67%,
+    #1d1d1d 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4.5s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+.divContent {
+  height: 63vh;
+  width: auto;
+}
+
+.contentImg {
+    height: fit-content;
+    width: 82vw;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contentCol {
+  animation-name: opacity;
+  animation-duration: .7s;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.contentCol:target {
+  animation-name: opacity;
+  animation-duration: 1s;
+}
+@keyframes opacity {
+  from {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 20%;
+  }
+  to {
+    opacity: 100%;
+  }
+  
+}
+
+#coldVaultContent {
+  height: fit-content;
+}
+
+#sectionTitle {
+  padding-bottom: 2vh;
+}
+
+
