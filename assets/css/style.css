@@ -15,6 +15,26 @@ nav.navbar {
   padding: 10px;
 }
 
+.buttonClickNav:active {
+  animation-name: scale;
+  animation-duration: .15s;
+}
+
+@keyframes scale {
+from {
+  scale: 100%;
+  animation-timing-function: ease-out;
+}
+50% {
+  scale: 80%;
+  opacity: 50%;
+}
+to {
+  scale: 100%;
+  animation-timing-function: ease;
+}
+}
+
 .navLogo {
   align-items: center;
   display: flex;
@@ -26,10 +46,43 @@ nav.navbar {
   align-items: flex-start;
   display: flex;
   margin-left: 20px;
-  height: 5vh;
+  height: 6vh;
 }
 
-#myVideo2 {
+.buttonClick:active {
+  animation-name: scale;
+  animation-duration: .25s;
+}
+
+@keyframes bounceUp {
+from {
+  scale: 100%;
+  animation-timing-function: ease-out;
+  
+}
+25% {
+  margin-bottom: 40px;
+  animation-timing-function: ease;
+}
+50% {
+  scale: 80%;
+  opacity: 50%;
+  margin-bottom: 0px;
+  animation-timing-function: ease;
+}
+70% {
+  margin-bottom: 20px;
+  animation-timing-function: ease;
+}
+to {
+  scale: 100%;
+  animation-timing-function: ease;
+
+}
+}
+
+
+#myVideo {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -39,6 +92,7 @@ nav.navbar {
   -o-object-fit: cover;
   z-index: -1000;
 }
+
 h1 {
   align-items: center;
   text-align: center;
@@ -49,6 +103,71 @@ h1 {
   font-size: 1.5vw;
   color: rgb(109, 109, 109);
 }
+
+
+.buttonRow {
+  padding-top: 2vh;
+  position: fixed;
+  bottom:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  padding-bottom: 4.5vh;
+
+}
+.Button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 8vw;
+    height: 15vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonsText {
+  color: gray;
+  font-weight: 600;
+  transform: rotate(-8deg);
+  font-size: .66vw;
+  padding-top: 1vh;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    1.5deg,
+    #4e4e4e 0%,
+    #373737 29%,
+    #232323 67%,
+    #1d1d1d 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4.5s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+/*landing page*/
 
 .map {
   height: 75vh;
@@ -89,166 +208,26 @@ h1 {
   opacity: 20%;
 }
 
-  .hawaii:hover {
-    fill: transparent;
-  }
-  .alaska:hover {
-    fill: transparent;
-  }
-  .california:hover {
-    fill: transparent;
-  }
-
-  .oregon:hover {
-    fill: transparent;
-  }
-  .washington:hover {
-    fill: transparent;
-  }
-  .wyoming:hover {
-    fill: transparent;
-  }
-
-  .montana:hover {
-    fill: transparent;
-  }
-
-  .idaho:hover {
-    fill: transparent;
-  }
-  .arizona:hover {
-    fill: transparent;
-  }
-  .nevada:hover {
-    fill: transparent;
-  }
-  .utah:hover {
-    fill: transparent;
-  }
-  .colorado:hover {
-    fill: transparent;
-  }
-  .newMexico:hover {
-    fill: transparent;
-  }
-  .northDakota:hover {
-    fill: transparent;
-  }
-  .southDakota:hover {
-    fill: transparent;
-  }
-  .texas:hover {
-    fill: transparent;
-  }
-  .nebraska:hover {
-    fill: transparent;
-  }
-  .iowa:hover {
-    fill: transparent;
-  }
-  .minnesota:hover {
-    fill: transparent;
-  }
-  .wisconsin:hover {
-    fill: transparent;
-  }
-  .missouri:hover {
-    fill: transparent;
-  }
-  .arkansas:hover {
-    fill: transparent;
-  }
-  .oklahoma:hover {
-    fill: transparent;
-  }
-  .kansas:hover {
-    fill: transparent;
-  }
-  .louisiana:hover {
-    fill: transparent;
-  }
-  .georgia:hover {
-    fill: transparent;
-  }
-  .alabama:hover {
-    fill: transparent;
-  }
-  .northCarolina:hover {
-    fill: transparent;
-  }
-  .tennessee:hover {
-    fill: transparent;
-  }
-  .michigan:hover {
-    fill: transparent;
-  }
-  .mississippi:hover {
-    fill: transparent;
-  }
-  .indiana:hover {
-    fill: transparent;
-  }
-  .illinois:hover {
-    fill: transparent;
-  }
-  .southCarolina:hover {
-    fill: transparent;
-  }
-  .newYork:hover {
-    fill: transparent;
-  }
-  .pennsylvania:hover {
-    fill: transparent;
-  }
-  .kentucky:hover {
-    fill: transparent;
-  }
-  .ohio:hover {
-    fill: transparent;
-  }
-  .virginia:hover {
-    fill: transparent;
-  }
-  .DC:hover {
-    fill: transparent;
-  }
-  .westVirginia:hover {
-    fill: transparent;
-  }
-  .newJersey:hover {
-    fill: transparent;
-  }
-  .maine:hover {
-    fill: transparent;
-  }
-  .vermont:hover {
-    fill: transparent;
-  }
-  .newHampshire:hover {
-    fill: transparent;
-  }
-  .massaschusetts:hover {
-    fill: transparent;
-  }
-  .conneticut:hover {
-    fill: transparent;
-  }
-  .delaware:hover {
-    fill: transparent;
-  }
-  .rhodeIsland:hover {
-    fill: transparent;
-  }
-  
-  .florida:hover {
-    fill: transparent;
-  }
-
-  .california:active {
-    animation-name: scale;
-    animation-duration: .5s;
+.midwest:active {
+  animation-name: scale;
+  animation-duration: .5s;
 }
- 
+
+.west:active {
+  animation-name: scale;
+  animation-duration: .5s;
+}
+
+.south:active {
+  animation-name: scale;
+  animation-duration: .5s;
+}
+.northEast:active {
+  animation-name: scale;
+  animation-duration: .5s;
+}
+
+ /*map animation*/
 @keyframes scale {
     from {
       scale: 100%;
@@ -257,7 +236,7 @@ h1 {
     }
     50% {
       opacity: 40%;
-      fill: #8dc63f;
+      fill: #afc98a;
 
     }
     to {
