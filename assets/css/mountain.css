@@ -1,0 +1,51 @@
+
+
+/*mountain*/
+
+.divContent {
+    height: 63vh;
+    width: auto;
+  }
+  
+  .contentImg {
+      height: auto;
+      width: 95vw;
+      display: block;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  
+  .contentCol {
+    animation-name: opacity;
+    animation-duration: .7s;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  div.contentCol:target {
+    animation-name: opacity;
+    animation-duration: 1s;
+  }
+  @keyframes opacity {
+    from {
+      opacity: 100%;
+    }
+    50% {
+      opacity: 20%;
+    }
+    to {
+      opacity: 100%;
+    }
+    
+  }
+  
+  #sectionTitle {
+    padding-bottom: 2vh;
+  }
+  
+  
+  

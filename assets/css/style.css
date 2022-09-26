@@ -259,10 +259,10 @@ height: 100vh;
   box-shadow: none;
 }
 .innovationOverlay {
-  width: 100%;
+  width: 99.5%;
   align-items: center;
   display: flex;
-  padding-top: 1.4%;
+  padding-top: 1.5%;
 }
 
 /*merch insights button*/
