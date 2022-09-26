@@ -50,44 +50,75 @@
         <div class="row divContent animate__animated animate__slideInLeft animate__slow">
             <div class="col contentCol">
                 <div id="coldVaultContent" class="animate__animated animate__slideInLeft animate_fast">
-                    <h1 id="sectionTitle" class="animate__animated animate__pulse animate__delay-1s"> PACIFIC COLD VAULT</h1>
-                    <img class="contentImg" src="/assets/images/West/WEST_Pacific_Legend_V5.png" alt="Pacific Cold Vault">
+                    <h1 id="sectionTitle" class="animate__animated animate__pulse animate__delay-1s"> PACIFIC COLD VAULT
+                    </h1>
+                    <img class="contentImg"
+                        src="/assets/images/01_Regional Cold Vault/WEST_Pacific/WEST_Pacific_ColdVault_F1.png"
+                        alt="Pacific Cold Vault">
 
-                      <!-- Button trigger modal -->
-                      <button type="button" class="btn btn-primary innovationButton" data-toggle="modal" data-target="#exampleModalCenter" data-backdrop="false">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary innovationButton" id="innovationButton" data-toggle="modal"
+                        data-target="#exampleModalCenter" data-backdrop="false">
                         NEW INNOVATION
                     </button>
-                    
-                    <!-- Modal -->
-                    <div class="modal " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">2023 INNOVATION</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                            <img class="innovationOverlay" src="/assets/images/West/WEST_Pacific_InnovationOverlay_V5.png">
-                            
-                            </div>
-                            <div class="modal-footer">
 
+                    <!-- Modal -->
+                    <div class="modal " id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-body">
+                                    <img class="innovationOverlay" id="innovationOverlay"
+                                        src="/assets/images/01_Regional Cold Vault/WEST_Pacific/WEST_Pacific_InnovationOverlay_F1.png">
+
+                                </div>
+                                <div class="modal-footer">
+                                <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
-                        </div>
+                            </div>
                         </div>
                     </div>
 
+
                 </div>
                 <div id="rankContent" class="animate__animated animate__slideInLeft animate_fast" style="display:none">
-                    <h1 id="sectionTitle" class="animate__animated animate__pulse animate__delay-1s">PERFORMANCE RANK</h1>
-                    <img class="contentImg" src="/assets/images/West/WEST_Pacific_PriorityRank.png" alt="Pacific Priority Rank">
+                    <h1 id="sectionTitle" class="animate__animated animate__pulse animate__delay-1s">PACIFIC PERFORMANCE
+                        RANK</h1>
+                    <img class="contentImg" src="/assets/images/02_Performance Rank/WEST_Pacific_PerformanceRank_F1.png"
+                        alt="Pacific Priority Rank">
                 </div>
-                <div id="brandContent" class="animate__animated animate__slideInLeft animate_fast" style="display:none;">
+                <div id="brandContent" class="animate__animated animate__slideInLeft animate_fast"
+                    style="display:none;">
                     <h1 id="sectionTitle" class="animate__animated animate__pulse animate__delay-1s ">BRAND FAMILY</h1>
-                    <img class="contentImg" src="/assets/images/MEC_BrandFamily_1_V2.png" alt="Different Brand Families">
+                    <img class="contentImg" src="/assets/images/03_Brand Family/MEC_BrandFamily_F2.png"
+                        alt="Different Brand Families">
                 </div>
+
+                <div id="merchInsights" class="animate__animated animate__slideInLeft animate_fast"
+                style="display:none;">
+                <div class="row">
+                    <h1 id="sectionTitle" class="animate__animated animate__pulse animate__delay-1s ">MERCHANDISING INSIGHTS</h1>
+                </div>
+                <div class="row merchInsightsRow">
+                    <div class="col-6">
+                        <a href=""><img class="merchButton" src="/assets/images/04_Merchandising Insights/Conversion Opportunity.svg"></a> 
+                        <a href=""><img class="merchButton" src="/assets/images/04_Merchandising Insights/Destination Strategy.svg"></a> 
+                        <a href=""><img class="merchButton" src="/assets/images/04_Merchandising Insights/Innovation Growth.svg"></a> 
+                        <a href=""><img class="merchButton" src="/assets/images/04_Merchandising Insights/More Households.svg"></a> 
+                    </div>
+
+                    <div class="col-6">
+                        <a href=""><img class="merchButton" src="/assets/images/04_Merchandising Insights/More Foot Traffic.svg"></a> 
+                        <a href=""><img class="merchButton" src="/assets/images/04_Merchandising Insights/Bigger Baskets.svg"></a> 
+                        <a href=""><img class="merchButton" src="/assets/images/04_Merchandising Insights/Top Beverages.svg"></a> 
+                        <a href=""><img class="merchButton" src="/assets/images/04_Merchandising Insights/Strategize with Monster.svg"></a> 
+                    </div>
+                 </div>
+            </div>
 
             </div>
         </div>
@@ -101,8 +132,8 @@
             <!--COLD VAULT-->
             <div class="col">
                 <button class="Button mx-auto" onclick="myFunction1()">
-                    <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 168.42 168.42" class="buttonClick">
+                    <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.42 168.42"
+                        class="buttonClick">
                         <defs>
                             <style>
                                 .cls-1 {
@@ -167,8 +198,8 @@
             <!--PERFORMANCE RANK AKA PRIORITY RANK-->
             <div class="col">
                 <button class="Button mx-auto" onclick="myFunction2()">
-                    <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 168.42 168.42" class="buttonClick">
+                    <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.42 168.42"
+                        class="buttonClick">
                         <defs>
                             <style>
                                 .cls-1 {
@@ -253,8 +284,8 @@
             <!--BRAND FAMILY-->
             <div class="col ">
                 <button class="Button mx-auto" onclick="myFunction3()">
-                    <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 168.42 168.42" class="buttonClick">
+                    <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.42 168.42"
+                        class="buttonClick">
                         <defs>
                             <style>
                                 .cls-1 {
@@ -290,6 +321,13 @@
             </div>
 
             <div class="col">
+                <button class="Button mx-auto" onclick="myFunction4()">
+                    <img src="/assets/images/Buttons/Merchandising Insights.svg">
+                    <p class="buttonsText animate-charcter">MERCHANDISING INSIGHTS</p>
+                </button>
+            </div>
+
+            <div class="col">
             </div>
 
         </div>
@@ -307,6 +345,7 @@
                     x.style.display = "block";
                     document.getElementById("rankContent").style.display = "none";
                     document.getElementById("brandContent").style.display = "none";
+                    document.getElementById("merchInsights").style.display = "none";
                 } else {
                     x.style.display = "none";
                 }
@@ -321,6 +360,7 @@
                     x.style.display = "block";
                     document.getElementById("brandContent").style.display = "none";
                     document.getElementById("coldVaultContent").style.display = "none";
+                    document.getElementById("merchInsights").style.display = "none";
                 } else {
                     x.style.display = "none";
 
@@ -335,19 +375,62 @@
                     x.style.display = "block";
                     document.getElementById("rankContent").style.display = "none";
                     document.getElementById("coldVaultContent").style.display = "none";
+                    document.getElementById("merchInsights").style.display = "none";
                 } else {
                     x.style.display = "none";
                 }
             }
         </script>
 
+<script>
+    function myFunction4() {
+        var x = document.getElementById("merchInsights");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            document.getElementById("rankContent").style.display = "none";
+            document.getElementById("coldVaultContent").style.display = "none";
+            document.getElementById("brandContent").style.display = "none";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+
+<script>
+    var images_modal = document.getElementById('innovationOverlay');
 
 
-        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?ver=4.1'></script>
+// When the user clicks anywhere outside of the modal, close it
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+window.onclick = function(event) {
+
+   if (event.target == images_modal) {
+
+      images_modal.style.display = "none";
+
+    }
+    else {
+        images_modal.style.display = "block";
+        }
+
+}
+</script>
+
+
+
+
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?ver=4.1'>
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
 
         </div>
 
